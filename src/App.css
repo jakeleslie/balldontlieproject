@@ -1,38 +1,35 @@
-.App {
+body {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,111,138,1) 56%, rgba(0,212,255,1) 100%);
+}
+.balldontlietitle {
+  font-size: 4vw;
+  color: white;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content{ /* these are the white squares for the api data */
+  width: 33%; /* Since we have three divs, and our width is 100%, 33% is one third of the width so it centers */
+  height: 400px;
+  background-color: #d3d3d3;
+  margin-top: 50px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#listDiv { /*this makes everything flex and side by side */
+  margin-top: 2rem;
+  width: 100%; /* Making the container flex and 100% width, so we can make our content centered */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contentTitle{ /*this is the container for the title for the content */
+    width: 33%;
+    height: 0px;
+    margin-top: 10px;
+    margin-left: 146px;
+    color: white;
+    font-size: x-large;
+} /*fix header centering */
+.innerdivheader{
+  margin-top: 10px;
+  text-align: center;
 }

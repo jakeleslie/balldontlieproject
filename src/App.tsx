@@ -1,25 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Title from './components/Title'
+import Leftdata from './components/Leftdata';
+import Middledata from './components/Middledata';
+import Rightdata from './components/Rightdata';
+import ContentTitle from './components/ContentTitle';
+import Divapiheader from './components/Divapiheader';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     
+      <Title title="BALLDONTLIE API STATS" />
+     
+      <div id="listDiv">
+         <ContentTitle header="Player Spotlight" />
+         <ContentTitle header="Random Game Stats" />
+         <ContentTitle header="Random Player Information" />
+        </div>
+     <div id="listDiv">
+        <div className="content">
+          <Divapiheader divtitle="Lebron James 2020 Averages" />
+        <Leftdata />
+        </div>
+        <div className="content">
+        <Divapiheader divtitle="Game Stats" />
+        <Middledata />
+        </div>
+        <div className="content">
+        <Divapiheader divtitle="Player Info" />
+        <Rightdata />
+        </div>
+      </div>
+      </div>
+    
   );
 }
 
