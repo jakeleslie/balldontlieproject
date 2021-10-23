@@ -1,6 +1,6 @@
 body {
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,111,138,1) 56%, rgba(0,212,255,1) 100%);
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(184,106,106,1) 0%, rgba(126,106,184,1) 89%);
 }
 .balldontlietitle {
   font-size: 4vw;
@@ -10,11 +10,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,111,138,1) 56%, r
 .content{ /* these are the white squares for the api data */
   width: 33%; /* Since we have three divs, and our width is 100%, 33% is one third of the width so it centers */
   height: 400px;
-  background-color: #d3d3d3;
   margin-top: 50px;
   border-radius: 5px;
   margin-left: 5px;
   margin-right: 5px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.27);
 }
 #listDiv { /*this makes everything flex and side by side */
   margin-top: 2rem;
@@ -25,11 +30,21 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,111,138,1) 56%, r
     width: 33%;
     height: 0px;
     margin-top: 10px;
-    margin-left: 146px;
     color: white;
     font-size: x-large;
+    text-align: center;
 } /*fix header centering */
 .innerdivheader{
   margin-top: 10px;
+  font-size: 1.5rem;
   text-align: center;
+}
+
+.midStyle {
+
+  width: 100%;
+  height: 20px;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  font-size: 1.2rem !important;
 }
