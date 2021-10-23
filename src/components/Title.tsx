@@ -1,11 +1,6 @@
-//MAKING A REACT FUNCTIONAL COMPONENT CALLED TITLE
-//IMPORTING REACT AND REACT ELEMENT
-import React, { ReactElement } from 'react'
+import React, { ReactElement } from 'react' //making a react functional component and importing react element
 
-
-//EXPORTING THIS FUNCTION CALLED TITLE. TAKING IN TITLE, AND USING TYPESCRIPT SO 
-//TITLE IS OF TYPE STRING. FUNCTION IS OF TYPE REACT ELEMENT
-//TAKING IN THE PROPS FROM APP AND RENDERING IT WITH THE CSS STYLING
+//exporting this function for use in app.tsx, it takes in a title prop from the app page, of type string. and then renders it in an h2 with a styled class
 export default function Title({ title }: { title: string }): ReactElement {
     return <h2 className="balldontlietitle">{title}</h2>
 }
